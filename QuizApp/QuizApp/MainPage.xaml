@@ -1,0 +1,30 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="QuizApp.MainPage">
+
+    <StackLayout Orientation="Vertical">
+        <Label Text="FLOSSY QUIZ" FontSize="Title" HorizontalOptions="Center"/>
+        <Button x:Name="buttonStartQuiz" Text="Start Quiz" Clicked="buttonStartQuiz_Clicked"/>
+        <StackLayout Orientation="Horizontal" >
+            <Label Text="Q1 - " FontSize="Medium"/>
+            <Label x:Name="labelQ1Answer" FontSize="Medium"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Q2 - " FontSize="Medium"/>
+            <Label x:Name="labelQ2Answer" FontSize="Medium"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Q3 - " FontSize="Medium"/>
+            <Label x:Name="labelQ3Answer" FontSize="Medium"/>
+        </StackLayout>
+        <StackLayout Orientation="Horizontal">
+            <Label Text="Q4 - " FontSize="Medium"/>
+            <Label x:Name="labelQ4Answer" FontSize="Medium"/>
+        </StackLayout>
+        <StackLayout x:Name="stackFlossPic">
+            <Image x:Name="imageFloss" Source="floss.jpeg"/>
+        </StackLayout>
+    </StackLayout>
+
+</ContentPage>
